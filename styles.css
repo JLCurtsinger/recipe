@@ -9,3 +9,22 @@ img {
     width: 100%;
     height: auto;
 }
+
+menu {
+    list-style-type: none;
+}
+
+menu svg, menu img {
+    width: 10%;
+    height: auto;
+}
+
+footer img {
+    width: 20%;
+    height: auto;
+    max-width: 200px;
+}
+
+footer p {
+    font-weight: bold;
+}
