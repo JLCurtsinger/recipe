@@ -225,11 +225,7 @@ footer p {
 @media screen and (max-width: 1300px) {
     #tools {
         display: flex;
-    }
-    menu li {
-        position: absolute;
-        display: contents;
-        top: 10px;
+        margin: 0 auto;
     }
 }
 
