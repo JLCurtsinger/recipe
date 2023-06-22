@@ -40,6 +40,7 @@ menu svg, menu img {
     position: absolute;
     text-align: center;
     align-items: center;
+    z-index: -1;
 }
 #search input {
     border: 2px solid #EB5428;
@@ -129,16 +130,29 @@ footer p {
         right: 25%;
         width: auto;
     }
-    
-    #h1 {
-        transform: translateY(125px);
+    #details {
+        transform: translateY(110px);
     }
-
+    #directions {
+        transform: translateY(110px);
+    }
+    #dishes {
+        transform: translateY(110px);
+    }
+    #h1 {
+        transform: translateY(130px);
+    }
+    #ingredients {
+        transform: translateY(110px);
+    }
     menu li {
         display: none;
     }
     #main_pic {
-        transform: translateY(20%);
+        transform: translateY(18%);
+    }
+    #main_text {
+        transform: translateY(120px);
     }
     #menu a {
         text-align: center;
@@ -157,6 +171,7 @@ footer p {
     }
     #socials {
         text-align: center;
+        transform: translateY(110px);
     }
     #socials svg {
         padding: 0 1.3em;
@@ -181,7 +196,7 @@ footer p {
         margin: 0 auto 5px auto;
     }
     #search {
-        top: 20%;
+        top: 90px;
         left: 20%;
         right: 20%;
     }
@@ -193,6 +208,9 @@ footer p {
     #search svg {
         transform: translateY(5%);
         margin: 0 auto;
+    }
+    footer {
+        transform: translateY(110px);
     }
     footer p {
         text-align: center;
