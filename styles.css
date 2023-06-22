@@ -37,6 +37,15 @@ menu svg, menu img {
 }
 #search {
     grid-area: search;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+}
+#search input {
+    border: 2px solid #EB5428;
+}
+#search svg {
+    background-color: #EB5428;
 }
 #intro {
     grid-area: intro;
@@ -107,7 +116,8 @@ footer p {
     } */
 
     #avatar {
-        
+        width: 25%;
+        padding: 5px 0;
     }
     #chefs_tools {
         text-align: center;
@@ -116,10 +126,19 @@ footer p {
         position: fixed;
         top: 0;
         left: 25%;
-        width: 50%;
+        right: 25%;
+        width: auto;
     }
+    
+    #h1 {
+        transform: translateY(125px);
+    }
+
     menu li {
         display: none;
+    }
+    #main_pic {
+        transform: translateY(20%);
     }
     #menu a {
         text-align: center;
@@ -140,11 +159,12 @@ footer p {
         text-align: center;
     }
     #socials svg {
-        padding: 0 1.5em;
+        padding: 0 1.3em;
     }
     #tools {
         display: flex;
         text-align: center;
+        transform: translateY(125px);
     }
     #tools a {
         color: #EB5428;
@@ -161,15 +181,18 @@ footer p {
         margin: 0 auto 5px auto;
     }
     #search {
-        position: relative;
-        top: -10px;
-        background-color: #EB5428;
-        width: 12%;
-        text-align: center;
-        align-items: center;
+        top: 20%;
+        left: 20%;
+        right: 20%;
+    }
+    #search input {
+        transform: translateY(-40%);
+        width: 78%;
+        height: 30px;
     }
     #search svg {
         transform: translateY(5%);
+        margin: 0 auto;
     }
     footer p {
         text-align: center;
