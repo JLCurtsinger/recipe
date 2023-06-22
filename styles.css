@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 
 html {
+    background-color: #F2F2F2;
     font-family: 'Bebas Neue', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
@@ -24,6 +25,44 @@ menu svg, menu img {
     height: auto;
 }
 
+#menu {
+    grid-area: menu;
+}
+#search {
+    grid-area: search;
+}
+#intro {
+    grid-area: intro;
+}
+#tools {
+    grid-area: tools;
+}
+#main_pic {
+    grid-area: main_pic;
+}
+#main_text {
+    grid-area: main_text;
+}
+#details {
+    grid-area: details;
+}
+#ingredients {
+    grid-area: ingredients;
+}
+#directions {
+    grid-area: directions;
+}
+#dishes {
+    grid-area: dishes;
+}
+#socials {
+    grid-area: socials;
+}
+
+footer {
+    grid-area: footer;
+}
+
 footer img {
     width: 20%;
     height: auto;
@@ -35,10 +74,76 @@ footer p {
 }
 
 @media screen and (max-width: 486px) {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "menu"
+    "search"
+    "intro"
+    "tools"
+    "main_pic"
+    "main_text"
+    "details"
+    "ingredients"
+    "directions"
+    "dishes"
+    "socials"
+    "footer";
+    menu li {
+        display: none;
+    }
+    #menu a {
+        text-align: center;
+        background-color: #FFFFFF;
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    #menu p {
+        margin: 0 auto;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    #socials {
+        text-align: center;
+    }
+    #socials svg {
+        padding: 0 1.5em;
+    }
+    #tools {
+        display: flex;
+        text-align: center;
+    }
+    #tools a {
+        color: #EB5428;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #tools svg {
+        padding: 0 1.5em;
+    }
+    #tools p {
+        font-size: .75em;
+        margin: 0 auto 5px auto;
+    }
+    #search {
+        position: relative;
+        top: -10px;
+        background-color: #EB5428;
+        width: 12%;
+        text-align: center;
+        align-items: center;
+    }
+    #search svg {
+        transform: translateY(5%);
+    }
     footer p {
         text-align: center;
     }
     footer img {
+        display: block;
         margin: 0 auto;
     }
 }
