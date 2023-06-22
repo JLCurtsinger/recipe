@@ -25,6 +25,13 @@ menu svg, menu img {
     height: auto;
 }
 
+#avatar {
+    text-align: center;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
 #menu {
     grid-area: menu;
 }
@@ -58,6 +65,13 @@ menu svg, menu img {
 #socials {
     grid-area: socials;
 }
+#chefs_tools {
+    padding: 5px;
+    background-color: #EB5428;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 
 footer {
     grid-area: footer;
@@ -74,27 +88,45 @@ footer p {
 }
 
 @media screen and (max-width: 486px) {
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "menu"
-    "search"
-    "intro"
-    "tools"
-    "main_pic"
-    "main_text"
-    "details"
-    "ingredients"
-    "directions"
-    "dishes"
-    "socials"
-    "footer";
+    /* html {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "menu"
+        "search"
+        "intro"
+        "tools"
+        "main_pic"
+        "main_text"
+        "details"
+        "ingredients"
+        "directions"
+        "dishes"
+        "socials"
+        "footer";
+    } */
+
+    #avatar {
+        
+    }
+    #chefs_tools {
+        text-align: center;
+        padding: 5px;
+        background-color: #EB5428;
+        position: fixed;
+        top: 0;
+        left: 25%;
+        width: 50%;
+    }
     menu li {
         display: none;
     }
     #menu a {
         text-align: center;
         background-color: #FFFFFF;
-        padding: 10px 20px;
+        width: 25%;
+        height: auto;
+        padding: 5px 0;
         position: fixed;
         top: 0;
         left: 0;
