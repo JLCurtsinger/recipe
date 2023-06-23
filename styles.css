@@ -91,7 +91,7 @@ footer p {
 
 
         /* SMALL DISPLAYS */
-@media screen and (max-width: 486px) {
+@media screen and (max-width: 490px) {
     /* html {
         display: grid;
         grid-template-columns: 1fr;
@@ -225,7 +225,7 @@ footer p {
 
 
         /* MEDIUM DISPLAYS */
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1270px) {
     #avatar {
         top: 0;
         right: 0;
@@ -274,8 +274,8 @@ footer p {
     #menu {
         top: 0; 
         /* why is this not working? */
-        transform: translateY(-12850%);
-        /* ^ that kind of works but doesn't seem right */
+        /* transform: translateY(-12850%); */
+        /* ^ that kind of works but doesn't seem right and isn't responsive */
     }
     #menu svg {
         display: none;
@@ -329,6 +329,6 @@ footer p {
 
 
         /* LARGE DISPLAYS */
-@media screen and (min-width: 1301px) {
+@media screen and (min-width: 1270px) {
 
 }
