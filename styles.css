@@ -193,6 +193,8 @@ footer p {
     #tools svg {
         padding: 0 1.5em;
     }
+
+    /* p was removed from tools */
     #tools p {
         font-size: .75em;
         margin: 0 auto 5px auto;
@@ -257,7 +259,7 @@ footer p {
         text-align: center;
         color: #EB5428;
     }
-    main h1 {
+    header h1 {
         transform: translateY(300%);
     }
     menu {
