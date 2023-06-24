@@ -53,7 +53,7 @@ menu {
 }
 #tools {
     grid-area: tools;
-}
+/* } */
 #main_pic {
     grid-area: main_pic;
 }
@@ -175,9 +175,12 @@ footer p {
     #socials svg {
         padding: 0 1.3em;
     }
+
+    /* socials p tags were removed */
     #socials p {
         display: none;
     }
+
     #tools {
         display: flex;
         text-align: center;
@@ -199,6 +202,7 @@ footer p {
         font-size: .75em;
         margin: 0 auto 5px auto;
     }
+
     #search {
         top: 90px;
         left: 20%;
