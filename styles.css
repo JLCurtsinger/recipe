@@ -19,7 +19,6 @@ menu {
     list-style-type: none;
 }
 
-
 /* menu svg, menu img {
     width: 10%;
     height: auto;
@@ -31,6 +30,18 @@ menu {
     position: fixed;
     top: 0;
     right: 0;
+}
+#details {
+    grid-area: details;
+}
+#directions {
+    grid-area: directions;
+}
+#dishes {
+    grid-area: dishes;
+}
+#intro {
+    grid-area: intro;
 }
 #menu {
     grid-area: menu;
@@ -48,32 +59,24 @@ menu {
 #search svg {
     background-color: #EB5428;
 }
-#intro {
-    grid-area: intro;
+#socials {
+    grid-area: socials;
+}
+#socials li {
+    list-style-type: none;
 }
 #tools {
     grid-area: tools;
-/* } */
+}
 #main_pic {
     grid-area: main_pic;
 }
 #main_text {
     grid-area: main_text;
 }
-#details {
-    grid-area: details;
-}
+
 #ingredients {
     grid-area: ingredients;
-}
-#directions {
-    grid-area: directions;
-}
-#dishes {
-    grid-area: dishes;
-}
-#socials {
-    grid-area: socials;
 }
 footer {
     grid-area: footer;
@@ -143,30 +146,8 @@ footer p {
     menu li {
         display: none;
     }
-    #main_pic {
-        transform: translateY(18%);
-    }
-    #main_text {
-        transform: translateY(120px);
-    }
-    menu svg, menu img {
-        width: 10%;
-        height: auto;
-    }
-    #menu a {
-        text-align: center;
-        background-color: #FFFFFF;
-        width: 25%;
-        height: auto;
-        padding: 5px 0;
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-    #menu p {
-        margin: 0 auto;
-        font-size: 1em;
-        font-weight: bold;
+    #menu svg {
+        background-color: #EB5428;
     }
     #socials {
         text-align: center;
@@ -175,12 +156,7 @@ footer p {
     #socials svg {
         padding: 0 1.3em;
     }
-
-    /* socials p tags were removed */
-    #socials p {
-        display: none;
-    }
-
+    
     #tools {
         display: flex;
         text-align: center;
@@ -237,13 +213,12 @@ footer p {
         right: 0;
         width: 10%;
     }
-    /* #chefs_tools {
-        unable to get this to display correctly
-        display: contents;
+    #chefs_tools {
         position: fixed;
         top: 0;
-        left: 0;
-    } */
+        left: 25%;
+        right: 25%;
+    }
     #tools {
         display: flex;
         align-items: center;
@@ -283,9 +258,9 @@ footer p {
         /* transform: translateY(-12850%); */
         /* ^ that kind of works but doesn't seem right and isn't responsive */
     }
-    #menu svg {
+    /* #menu svg {
         display: none;
-    }
+    } */
     #menu a {
         text-align: center;
         font-size: .7em;
