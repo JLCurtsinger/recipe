@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+#avatar {
+    text-align: center;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+#chefs_tools {
+    text-align: center;
+    background-color: #EB5428;
+}
+dd {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+dt {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+#details {
+    grid-area: details;
+}
+#directions {
+    grid-area: directions;
+}
+#dishes {
+    grid-area: dishes;
+}
+html {
+    background-color: #F2F2F2;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+}
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+#ingredients {
+    grid-area: ingredients;
+}
+input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+#intro {
+    grid-area: intro;
+}
+li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+#main_pic {
+    grid-area: main_pic;
+}
+#main_text {
+    grid-area: main_text;
+}
+menu {
+    list-style-type: none;
+}
+/* menu svg, menu img {
+    width: 10%;
+    height: auto;
+} */
+#menu {
+    grid-area: menu;
+}
+menu li {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+nav {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+nav a {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+nav span {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+#search {
+    grid-area: search;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    z-index: -1;
+}
+#search input {
+    border: 2px solid #EB5428;
+}
+#search svg {
+    background-color: #EB5428;
+}
+#socials {
+    grid-area: socials;
+}
+#socials li {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+}
+#tools {
+    grid-area: tools;
+}
+footer {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    grid-area: footer;
+}
+footer img {
+    width: 20%;
+    height: auto;
+    max-width: 200px;
+}
+footer p {
+    font-weight: bold;
+}
+
+        /* SMALL DISPLAYS */
+@media screen and (max-width: 490px) {
+    /* #avatar {
+        width: 25%;
+        padding: 5px 0;
+    } */
+    #chefs_tools {
+        text-align: center;
+        padding: 5px;
+        background-color: #EB5428;
+        position: fixed;
+        top: 0;
+        left: 25%;
+        right: 25%;
+    }
+    /* #details {
+        transform: translateY(110px);
+    } */
+    #directions {
+        transform: translateY(110px);
+    }
+    #dishes {
+        transform: translateY(110px);
+    }
+    #h1 {
+        transform: translateY(130px);
+        text-align: center;
+    }
+    #ingredients {
+        transform: translateY(110px);
+    }
+    menu li {
+        display: none;
+    }
+    /* #menu svg {
+        background-color: #FFFFFF;
+    } */
+    #socials {
+        text-align: center;
+        transform: translateY(110px);
+    }
+    #socials svg {
+        padding: 0 1.3em;
+    }
+    
+    #tools {
+        display: flex;
+        text-align: center;
+        transform: translateY(125px);
+    }
+    #tools a {
+        color: #EB5428;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #tools svg {
+        padding: 0 1.5em;
+    }
+
+    /* p was removed from tools */
+    #tools p {
+        font-size: .75em;
+        margin: 0 auto 5px auto;
+    }
+    #search input {
+        width: auto;
+        height: 30px;
+    }
+    footer {
+        transform: translateY(110px);
+    }
+    footer p {
+        text-align: center;
+    }
+    footer img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+        /* MEDIUM DISPLAYS */
+@media screen and (max-width: 1270px) {
+    #avatar {
+        top: 0;
+        right: 0;
+        width: 10%;
+    }
+    #chefs_tools {
+        position: fixed;
+        top: 0;
+        left: 25%;
+        right: 25%;
+    }
+    #tools {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 18%;
+        transform: translateY(100%);
+        background-color: rgba(255, 255, 255, .7);
+    }
+    #tools a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    #tools p {
+        text-align: center;
+        color: #EB5428;
+    }
+    header h1 {
+        transform: translateY(300%);
+    }
+    menu {
+        /* border-bottom: solid; */
+        /* ^ why does this make the menu disappear? */
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    menu li {
+        text-align: center;
+    }
+    #menu {
+        top: 0; 
+        /* why is this not working? */
+        /* transform: translateY(-12850%); */
+        /* ^ that kind of works but doesn't seem right and isn't responsive */
+    }
+    /* #menu svg {
+        display: none;
+    } */
+    #menu a {
+        text-align: center;
+        font-size: .7em;
+        color: #EB5428;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    #menu img {
+        width: 20%;
+    }
+    #search {
+        position: absolute;
+        top: 2%;
+        right: 30%;
+    }
+    #socials {
+        translate: 300px 95px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        gap: 4%;
+    }
+    /* #socials svg {
+        padding: 15px;
+    } */
+    #socials p {
+        /* text-align: center; */
+        font-size: .5em;
+        font-weight: bold;
+        color: #EB5428;
+        padding: 0;
+    }
+    footer {
+        background-color: #FFFFFF;
+        bottom: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+    footer img {
+        translate: 60px -75px;
+    }
+    footer p {
+        text-align: center;
+        translate: -175px 125px;
+    }
+}
+
+
+        /* LARGE DISPLAYS */
+/* @media screen and (min-width: 1270px) {
+
+} */

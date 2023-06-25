@@ -1,315 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 
-html {
-    background-color: #F2F2F2;
-    font-family: 'Bebas Neue', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-}
-
-h2 {
-    text-align: center;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-menu {
-    list-style-type: none;
-}
-
-/* menu svg, menu img {
-    width: 10%;
-    height: auto;
-} */
-
 #avatar {
-    text-align: center;
     background-color: #FFFFFF;
     position: fixed;
     top: 0;
     right: 0;
 }
-#details {
-    grid-area: details;
+#avatar a {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
 }
-#directions {
-    grid-area: directions;
-}
-#dishes {
-    grid-area: dishes;
-}
-#intro {
-    grid-area: intro;
-}
-#menu {
-    grid-area: menu;
-}
-#search {
-    grid-area: search;
-    position: absolute;
+#chefs_tools {
     text-align: center;
-    align-items: center;
-    z-index: -1;
-}
-#search input {
-    border: 2px solid #EB5428;
-}
-#search svg {
     background-color: #EB5428;
 }
-#socials {
-    grid-area: socials;
+dd {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
 }
-#socials li {
-    list-style-type: none;
+#dishes {
+    background-color: #7ABFBF;
 }
-#tools {
-    grid-area: tools;
+#dishes img {
+    position: relative;
+    left: 10px;
+    width: 25%;
 }
-#main_pic {
-    grid-area: main_pic;
-}
-#main_text {
-    grid-area: main_text;
-}
-
-#ingredients {
-    grid-area: ingredients;
-}
-footer {
-    grid-area: footer;
-}
-
-footer img {
-    width: 20%;
-    height: auto;
-    max-width: 200px;
-}
-
-footer p {
+dt {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
     font-weight: bold;
 }
-
-
-        /* SMALL DISPLAYS */
-@media screen and (max-width: 490px) {
-    /* html {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "menu"
-        "search"
-        "intro"
-        "tools"
-        "main_pic"
-        "main_text"
-        "details"
-        "ingredients"
-        "directions"
-        "dishes"
-        "socials"
-        "footer";
-    } */
-
-    #avatar {
-        width: 25%;
-        padding: 5px 0;
-    }
-    #chefs_tools {
-        text-align: center;
-        /* padding: 5px; */
-        background-color: #EB5428;
-        /* position: fixed;
-        top: 0;
-        left: 25%;
-        right: 25%;
-        width: 10%; */
-    }
-    #details {
-        transform: translateY(110px);
-    }
-    #directions {
-        transform: translateY(110px);
-    }
-    #dishes {
-        transform: translateY(110px);
-    }
-    #h1 {
-        transform: translateY(130px);
-        text-align: center;
-    }
-    #ingredients {
-        transform: translateY(110px);
-    }
-    menu li {
-        display: none;
-    }
-    #menu svg {
-        background-color: #EB5428;
-    }
-    #socials {
-        text-align: center;
-        transform: translateY(110px);
-    }
-    #socials svg {
-        padding: 0 1.3em;
-    }
-    
-    #tools {
-        display: flex;
-        text-align: center;
-        transform: translateY(125px);
-    }
-    #tools a {
-        color: #EB5428;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    #tools svg {
-        padding: 0 1.5em;
-    }
-
-    /* p was removed from tools */
-    #tools p {
-        font-size: .75em;
-        margin: 0 auto 5px auto;
-    }
-
-    #search {
-        top: 90px;
-        left: 20%;
-        right: 20%;
-    }
-    #search input {
-        transform: translateY(-40%);
-        width: 78%;
-        height: 30px;
-    }
-    #search svg {
-        transform: translateY(5%);
-        margin: 0 auto;
-    }
-    footer {
-        transform: translateY(110px);
-    }
-    footer p {
-        text-align: center;
-    }
-    footer img {
-        display: block;
-        margin: 0 auto;
-    }
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+}
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+}
+html {
+    background-color: #F2F2F2;
+    font-family: 'Montserrat', sans-serif;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+menu {
+    list-style-type: none;
+}
+#menu {
+    font-family: 'Bebas Neue', sans-serif;
+}
+menu a {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #EB5428;
+    text-decoration: none;
+}
+.rating {
+    font-weight: bold;
+}
+#socials a {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #EB5428;
+}
+#socials li {
+    padding: 10px;
+}
+#socials ul{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+#tools a {
+    font-family: 'Bebas Neue', sans-serif;
 }
 
-
-        /* MEDIUM DISPLAYS */
-@media screen and (max-width: 1270px) {
-    #avatar {
-        top: 0;
-        right: 0;
-        width: 10%;
-    }
+/* SMALL DISPLAYS */
+@media screen and (max-width: 490px) {
     #chefs_tools {
         position: fixed;
         top: 0;
         left: 25%;
         right: 25%;
+        height: auto;
     }
-    #tools {
-        display: flex;
+    #details {
+        transform: translateY(500%);
+    }
+    h1 {
+        text-align: center;
+        transform: translateY(200%);
+    }
+    #hamburger {
         align-items: center;
-        justify-content: center;
-        gap: 18%;
-        transform: translateY(100%);
-        background-color: rgba(255, 255, 255, .7);
-    }
-    #tools a {
+        background-color: #FFFFFF;
+        text-align: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 10px;
-    }
-    #tools p {
-        text-align: center;
-        color: #EB5428;
-    }
-    header h1 {
-        transform: translateY(300%);
-    }
-    menu {
-        /* border-bottom: solid; */
-        /* ^ why does this make the menu disappear? */
+        position: fixed;
         top: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
+        left: 0;
     }
-    menu li {
+    #tools {
         text-align: center;
-    }
-    #menu {
-        top: 0; 
-        /* why is this not working? */
-        /* transform: translateY(-12850%); */
-        /* ^ that kind of works but doesn't seem right and isn't responsive */
-    }
-    /* #menu svg {
-        display: none;
-    } */
-    #menu a {
-        text-align: center;
-        font-size: .7em;
         color: #EB5428;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    #menu img {
-        width: 20%;
-    }
-    #search {
-        position: absolute;
-        top: 2%;
-        right: 30%;
-    }
-    #socials {
-        translate: 300px 95px;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        gap: 4%;
-    }
-    /* #socials svg {
-        padding: 15px;
-    } */
-    #socials p {
-        /* text-align: center; */
-        font-size: .5em;
-        font-weight: bold;
-        color: #EB5428;
-        padding: 0;
-    }
-    footer {
-        background-color: #FFFFFF;
-        bottom: 0;
-        width: 100%;
-        padding: 10px 0;
-    }
-    footer img {
-        translate: 60px -75px;
-    }
-    footer p {
-        text-align: center;
-        translate: -175px 125px;
     }
 }
 
+/* MEDIUM DISPLAYS */
+/* @media screen and (max-width: 1270px) {
 
-        /* LARGE DISPLAYS */
-@media screen and (min-width: 1270px) {
+} */
 
-}
+/* LARGE DISPLAYS */
+/* @media screen and (min-width: 1270px) {
+
+} */
