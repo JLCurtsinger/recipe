@@ -82,6 +82,12 @@ menu a {
 .rating {
     font-weight: bold;
 }
+#search input {
+    border: 2px solid #EB5428;
+}
+#search svg {
+    background-color: #EB5428;
+}
 #socials a {
     font-family: 'Bebas Neue', sans-serif;
     color: #EB5428;
@@ -149,12 +155,10 @@ menu a {
         right: 20%;
     }
     #search input {
-        border: 2px solid #EB5428;
         height: 2em;
         width: 20em;
     }
     #search svg {
-        background-color: #EB5428;
         height: 2.39em;
         width: 3.5em;
     }
@@ -166,10 +170,11 @@ menu a {
 }
 
 /* MEDIUM DISPLAYS */
-@media screen and (max-width: 1270px) {
+@media screen and (min-width: 491px) and (max-width: 1270px) {
     #avatar {
-        right: 10px;
-        width: 4em;
+        right: 5px;
+        width: 3em;
+        transform: translateY(10%);
     }
     #chefs_tools {
         position: fixed;
@@ -177,12 +182,48 @@ menu a {
         left: 0;
         width: 4em;
     }
+    #details {
+        transform: translateY(500%);
+    }
     h1 {
-        transform: translateY(200%);
+        transform: translateY(300%);
+    }
+    menu {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+    }
+    #menu {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #menu img {
+        display: flex;
+        flex-direction: row;
+        height: 40px;
+        width: auto;
+    }
+    menu li {
+        transform: translateY(110%);
+        text-align: center;
+        padding: 0 2.1%;
+    }
+    #hamburger {
+        display: none;
+    }
+    #search {
+        justify-content: right;
+        display: flex;
+        margin: 0 auto;
+        position: fixed;
+        top: 20px;
+        width: 80%;
     }
 }
 
 /* LARGE DISPLAYS */
-/* @media screen and (min-width: 1270px) {
+/* @media screen and (min-width: 1271px) {
 
 } */
