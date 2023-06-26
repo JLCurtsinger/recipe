@@ -146,6 +146,9 @@ menu a {
     #main_text {
         transform: translateY(-60%);
     }
+    #menu img {
+        display: none;
+    }
     #search {
         display: flex;
         align-items: center;
@@ -183,10 +186,20 @@ menu a {
         width: 4em;
     }
     #details {
-        transform: translateY(500%);
+        transform: translateY(425%);
+    }
+    #details dl {
+        display: inline;
     }
     h1 {
-        transform: translateY(300%);
+        transform: translateY(295%);
+    }
+    #main_pic {
+        transform: translateY(-29%);
+        z-index: -1;
+    }
+    #main_text {
+        transform: translateY(-105%);
     }
     menu {
         justify-content: center;
@@ -213,6 +226,9 @@ menu a {
     #hamburger {
         display: none;
     }
+    .nav #search {
+        z-index: 2;
+    }
     #search {
         justify-content: right;
         display: flex;
@@ -220,6 +236,22 @@ menu a {
         position: fixed;
         top: 20px;
         width: 80%;
+    }
+    #tools {
+        justify-content: center;
+        position: relative;
+        display: flex;
+        width: 100%;
+        transform: translateY(-258%);
+        background-color: rgba(255, 255, 255, .5);
+        z-index: 1;
+    }
+    #tools a {
+        color: #EB5428;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 20%;
     }
 }
 
