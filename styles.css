@@ -265,7 +265,6 @@ menu a {
         transform: translateY(20%);
     }
     #main_pic {
-        position: relative;
         transform: translateY(-29%);
         z-index: -1;
     }
