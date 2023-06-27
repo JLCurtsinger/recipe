@@ -359,6 +359,16 @@ menu a {
         position: absolute;
         top: 0;
     }
+    footer {
+        width: 30%;
+    }
+    header {
+        translate: 20px 50px;
+    }
+    #menu {
+        position: absolute;
+        top: 0;
+    }
     #menu img {
         width: 8%;
         display: flex;
@@ -366,5 +376,9 @@ menu a {
     #main_pic {
         width: 35%;
         translate: 100px 20px;
+    }
+    #tools {
+        display: flex;
+        flex-direction: column;
     }
 }
