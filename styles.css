@@ -23,6 +23,12 @@ dd {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
+#details {
+    grid-area: details;
+}
+#directions {
+    grid-area: directions;
+}
 #dishes {
     background-color: #7ABFBF;
 }
@@ -35,6 +41,12 @@ dt {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: bold;
+}
+#dishes h2 {
+    grid-area: dishTitle;
+}
+#guacamole {
+    grid-area: guacamole;
 }
 h1 {
     font-family: 'Bebas Neue', sans-serif;
@@ -57,6 +69,9 @@ img {
     width: 100%;
     height: auto;
 }
+#ingredients {
+    grid-area: ingredients;
+}
 input {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -76,11 +91,17 @@ menu a {
     color: #EB5428;
     text-decoration: none;
 }
+#MexicanRice {
+    grid-area: MexicanRice;
+}
 .nav {
     box-shadow: 0 2px 0 0 rgba(10, 10, 10, .08);
 }
 .rating {
     font-weight: bold;
+}
+#salsa {
+    grid-area: salsa;
 }
 #search input {
     border: 2px solid #EB5428;
@@ -103,6 +124,9 @@ menu a {
 }
 #tools a {
     font-family: 'Bebas Neue', sans-serif;
+}
+#tortillas {
+    grid-area: tortillas;
 }
 
 /* SMALL DISPLAYS */
@@ -174,6 +198,12 @@ menu a {
 
 /* MEDIUM DISPLAYS */
 @media screen and (min-width: 491px) and (max-width: 1270px) {
+    /* aside {
+        display: flex;
+    } */
+    /* aside h3, aside p, aside svg {
+        translate: 120px 10px;
+    } */
     #avatar {
         right: 5px;
         width: 3em;
@@ -187,12 +217,30 @@ menu a {
     }
     #details {
         transform: translateY(425%);
+        text-align: center;
     }
     #details dl {
         display: inline;
     }
+    #directions {
+        transform: translateY(20%);
+    }
+    #dishes {
+        transform: translateY(10%);
+        display: grid;
+        grid-template-areas: 
+        "dishTitle dishTitle"
+        "MexicanRice salsa"
+        "guacamole tortillas";
+    }
+    #hamburger {
+        display: none;
+    }
     h1 {
-        transform: translateY(295%);
+        transform: translateY(270%);
+    }
+    #ingredients {
+        transform: translateY(20%);
     }
     #main_pic {
         transform: translateY(-29%);
@@ -223,9 +271,12 @@ menu a {
         text-align: center;
         padding: 0 2.1%;
     }
-    #hamburger {
-        display: none;
-    }
+    /* .mids {
+        display: grid;
+        grid-template-areas: 
+        "details details"
+        "ingredients directions";
+    } */
     .nav #search {
         z-index: 2;
     }
@@ -236,6 +287,13 @@ menu a {
         position: fixed;
         top: 20px;
         width: 80%;
+    }
+    #socials {
+        translate: 80px 60px;
+    }
+    #socials a {
+        display: flex;
+        flex-direction: column;
     }
     #tools {
         justify-content: center;
@@ -252,6 +310,17 @@ menu a {
         display: flex;
         flex-direction: column;
         width: 20%;
+    }
+    footer {
+        align-items: center;
+    }
+    footer img {
+        width: 25%;
+        translate: 50px -140px;
+    }
+    footer h3 {
+        text-align: center;
+        translate: -128px 100px;
     }
 }
 
