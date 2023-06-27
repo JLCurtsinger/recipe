@@ -6,6 +6,7 @@
     position: fixed;
     top: 0;
     right: 0;
+    grid-area: avatar;
 }
 #avatar a {
     display: flex;
@@ -18,6 +19,7 @@
 #chefs_tools {
     text-align: center;
     background-color: #EB5428;
+    grid-area: chefsTools;
 }
 dd {
     font-family: 'Montserrat', sans-serif;
@@ -31,6 +33,7 @@ dd {
 }
 #dishes {
     background-color: #7ABFBF;
+    grid-area: dishes;
 }
 #dishes img {
     position: relative;
@@ -44,6 +47,9 @@ dt {
 }
 #dishes h2 {
     grid-area: dishTitle;
+}
+footer {
+    grid-area: footer;
 }
 #guacamole {
     grid-area: guacamole;
@@ -60,6 +66,9 @@ h2 {
 h3 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 25px;
+}
+header {
+    grid-area: header;
 }
 html {
     background-color: #F2F2F2;
@@ -80,11 +89,18 @@ li {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
+#main_pic {
+    grid-area: mainPic;
+}
+#main_text {
+    grid-area: mainText;
+}
 menu {
     list-style-type: none;
 }
 #menu {
     font-family: 'Bebas Neue', sans-serif;
+    grid-area: menu;
 }
 menu a {
     font-family: 'Bebas Neue', sans-serif;
@@ -102,6 +118,9 @@ menu a {
 }
 #salsa {
     grid-area: salsa;
+}
+#search {
+    grid-area: search;
 }
 #search input {
     border: 2px solid #EB5428;
@@ -121,6 +140,9 @@ menu a {
     display: flex;
     justify-content: center;
     list-style-type: none;
+}
+#tools {
+    grid-area: tools;
 }
 #tools a {
     font-family: 'Bebas Neue', sans-serif;
@@ -325,6 +347,24 @@ menu a {
 }
 
 /* LARGE DISPLAYS */
-/* @media screen and (min-width: 1271px) {
-
-} */
+@media screen and (min-width: 1271px) {
+    /* body {
+        display: grid;
+        grid-template-areas: 
+        "chefsTools menu avatar"
+        "search search search"
+        "header header header"
+    } */
+    #chefs_tools {
+        position: absolute;
+        top: 0;
+    }
+    #menu img {
+        width: 8%;
+        display: flex;
+    }
+    #main_pic {
+        width: 35%;
+        translate: 100px 20px;
+    }
+}
